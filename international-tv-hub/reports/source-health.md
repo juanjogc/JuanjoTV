@@ -1,0 +1,55 @@
+# International television source health
+
+Generated: `2026-08-25T00:02:53-05:00`
+Network route: **Peru direct** (`DIRECT`)
+
+Registry: **33** channels  
+Published: **33** enabled channels  
+Probed: **0** — 0 healthy, 0 unhealthy
+
+A healthy probe means the complete live chain passed: top-level manifest, selected media playlist, and bytes from a current media segment. It does not grant rights or guarantee future availability.
+
+| Rank | ID | Channel | Group | Published | Probe | Stage | HTTP | ms | Source label | Distribution | Required route | Retry sequence | Note |
+|---:|---|---|---|:---:|---|---|---:|---:|---|---|---|---|---|
+| 1 | bfm-business | BFM Business | FR \| French | yes | not checked | — | — | — | Official HLS | BFM Business broadcaster CDN | Peru direct | Peru direct → NordVPN France → NordVPN Belgium → NordVPN Switzerland | French markets and economics. |
+| 2 | france24-fr | France 24 Français | FR \| French | yes | not checked | — | — | — | Official HLS | France Médias Monde broadcaster CDN | Peru direct | Peru direct → NordVPN France → NordVPN Belgium → NordVPN Switzerland | French international news. |
+| 3 | euronews-fr | Euronews Français | FR \| French | yes | not checked | — | — | — | Official HLS | Euronews broadcaster CDN | Peru direct | Peru direct → NordVPN France → NordVPN Belgium → NordVPN Switzerland | European rolling news in French. |
+| 4 | tv5monde-info | TV5MONDE Info | FR \| French | yes | not checked | — | — | — | Official HLS | TV5MONDE broadcaster CDN | Peru direct | Peru direct → NordVPN France → NordVPN Belgium → NordVPN Switzerland | Francophone public-interest news. |
+| 5 | arte-fr | ARTE Français | FR \| French | yes | not checked | — | — | — | Official HLS | ARTE public broadcaster simulcast CDN | NordVPN France | Peru direct → NordVPN France → NordVPN Belgium → NordVPN Switzerland | Documentaries, science, history and culture; current Peru route is blocked, so use NordVPN France. |
+| 6 | bloomberg-eu | Bloomberg Television Europe | INTL \| Global | yes | not checked | — | — | — | Official HLS | Bloomberg publisher stream | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | Markets, macroeconomics and European business. |
+| 7 | bloomberg-us | Bloomberg Television US | INTL \| Global | yes | not checked | — | — | — | Official HLS | Bloomberg publisher stream | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | US markets and corporate news. |
+| 8 | bbc-news | BBC News | INTL \| Global | yes | not checked | — | — | — | Official HLS | BBC worldwide Akamai HLS feed | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | Global and British public-service news. |
+| 9 | france24-en | France 24 English | INTL \| Global | yes | not checked | — | — | — | Official HLS | France Médias Monde broadcaster CDN | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | International affairs comparison feed. |
+| 10 | euronews-en | Euronews English | INTL \| Global | yes | not checked | — | — | — | Official HLS | Euronews broadcaster CDN | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | Fast Europe-wide news scan. |
+| 11 | dw-en | DW English | INTL \| Global | yes | not checked | — | — | — | Official HLS | DW public broadcaster CDN | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | German and European international perspective. |
+| 12 | yahoo-finance | Yahoo Finance | INTL \| Global | yes | not checked | — | — | — | FAST partner | Yahoo Finance FAST CloudFront feed; Amagi/Plex fallbacks | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | Open US markets cross-check. |
+| 13 | nhk-world | NHK World-Japan | INTL \| Global | yes | not checked | — | — | — | Official HLS | NHK public broadcaster international stream | Peru direct | Peru direct → NordVPN Japan → NordVPN Singapore → NordVPN United Kingdom → NordVPN United States | Japanese public-service international perspective. |
+| 14 | cna | CNA | INTL \| Global | yes | not checked | — | — | — | Broadcaster CDN | CNA CloudFront broadcaster feed | Peru direct | Peru direct → NordVPN Japan → NordVPN Singapore → NordVPN United Kingdom → NordVPN United States | Asia-Pacific geopolitics and business. |
+| 15 | suspilne-kyiv | Suspilne Kyiv | CEE \| Eastern Europe | yes | not checked | — | — | — | Official HLS | Suspilne public broadcaster CDN | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Ukrainian public-service perspective. |
+| 16 | tvp-world | TVP World | CEE \| Eastern Europe | yes | not checked | — | — | — | Working mirror | lowa8026-cmyk GitHub mirror; Antik named-distributor fallback | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Approved with the mirror disclosure preserved; English-language CEE perspective. |
+| 17 | current-time | Current Time | CEE \| Eastern Europe | yes | not checked | — | — | — | Official HLS | Radio Free Europe/Radio Liberty Akamai feed | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Independent Russian-language 24/7 news. |
+| 18 | tv-rain | TV Rain / Дождь | CEE \| Eastern Europe | yes | not checked | — | — | — | Official HLS | TV Rain broadcaster stream | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Independent Russian opposition television. |
+| 19 | tvr-info | TVR Info | CEE \| Eastern Europe | yes | not checked | — | — | — | Broadcaster CDN | TVR Info broadcaster CDN | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Romanian public rolling news. |
+| 20 | etv-plus | ETV+ | CEE \| Eastern Europe | yes | not checked | — | — | — | Official HLS | ERR Estonian public broadcaster HLS | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Russian-language Baltic public service. |
+| 21 | tvp-info | TVP Info | CEE \| Eastern Europe | yes | not checked | — | — | — | Working mirror | lowa8026-cmyk GitHub mirror; Antik named-distributor fallback | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Approved with the mirror disclosure preserved; Polish domestic rolling news. |
+| 22 | ct24 | ČT24 | CEE \| Eastern Europe | yes | not checked | — | — | — | Named distributor | Antik Telecom distribution of ČT24 | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Czech public rolling news; distributor disclosure preserved. |
+| 23 | belsat-vottak | Belsat / Vot Tak / Slawa | CEE \| Eastern Europe | yes | not checked | — | — | — | Working distributor | Prosto TV distribution of the Belsat/Vot Tak/Slawa programming blocks | Peru direct | Peru direct → NordVPN Poland → NordVPN Germany → NordVPN Netherlands | Belarusian, Russian and Ukrainian independent blocks; distributor disclosure preserved. |
+| 24 | rtve-24h | RTVE Canal 24 Horas | EU \| National | yes | not checked | — | — | — | Nord Spain proxy | RTVE official player resolving to Golumi live CDN through a restricted local HLS proxy | NordVPN Spain | NordVPN Spain → Peru direct | Spanish public rolling news; RTVE requires its official browser headers, preserved by the local proxy; play through NordVPN Spain. |
+| 25 | orf-iii | ORF III | EU \| National | yes | not checked | — | — | — | Official HLS | ORF/ORS broadcaster HLS | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | News analysis, parliament and culture. |
+| 26 | rai-news-24 | Rai News 24 | EU \| National | yes | not checked | — | — | — | Nord Italy resolver | Rai News official player via Mediapolis and Rai CDN; disclosed broadcaster CloudFront fallback | NordVPN Italy | NordVPN Italy → Peru direct | Italian public rolling news; play through NordVPN Italy. |
+| 27 | canal-z | Canal Z | BENELUX \| News | yes | not checked | — | — | — | Broadcaster CDN | Roularta/Trends Z CloudFront live feed | Peru direct | Peru direct → NordVPN France → NordVPN Belgium → NordVPN Switzerland | French-language Benelux business news. |
+| 28 | ln24 | LN24 | BENELUX \| News | yes | not checked | — | — | — | Nord Belgium resolver | LN24 official Rise player resolving to Infomaniak CDN | NordVPN Belgium | NordVPN Belgium → Peru direct | Belgian talk, domestic news and current affairs; resolve and play through NordVPN Belgium. |
+| 29 | npo-politiek | NPO Politiek en Nieuws | BENELUX \| News | yes | not checked | — | — | — | Nord Netherlands resolver | NPO Start anonymous token and official NPO Player stream-link resolver | NordVPN Netherlands | NordVPN Netherlands → Peru direct | Dutch politics, debates and press conferences; resolve and play through NordVPN Netherlands. |
+| 30 | rtl-letzebuerg | RTL Télé Lëtzebuerg | BENELUX \| News | yes | not checked | — | — | — | Official HLS | RTL Luxembourg broadcaster CDN | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | Luxembourgish national news and public-interest programming. |
+| 31 | tagesschau24 | tagesschau24 | DE-CH \| Public | yes | not checked | — | — | — | Official HLS | ARD/tagesschau Akamai live stream | Peru direct | Peru direct → NordVPN United Kingdom → NordVPN United States → NordVPN Netherlands → NordVPN Germany | ARD public rolling news. |
+| 32 | phoenix | phoenix | DE-CH \| Public | yes | not checked | — | — | — | Nord Germany | ARD/ZDF phoenix official Akamai HLS | NordVPN Germany | NordVPN Germany → Peru direct | Politics, parliament and live events; play through NordVPN Germany. |
+| 33 | rts-info | RTS Info | DE-CH \| Public | yes | not checked | — | — | — | Nord Switzerland | RTS public broadcaster Akamai HLS | NordVPN Switzerland | NordVPN Switzerland → Peru direct | French-language Swiss public 24/7 news loop; official SRG SSR media-composition resolver; play through NordVPN Switzerland. |
+
+## Policy
+
+- This registry is approval-locked: generated playlists may contain only the 33 approved channel IDs.
+- Mirror and distributor channels retain their source labels in the registry, M3U metadata, and this report.
+- Dynamic official players are resolved at request time by the local hub server; the Mac and Apple TV must use the documented NordVPN route.
+- A failed direct Peru probe triggers the channel's NordVPN route sequence; geography is a retry condition, not an automatic rejection.
+- Use the same NordVPN country on Apple TV when playing a stream that only passed through that route.
+- Do not add scraped subscription channels, DRM manifests, credentials, tokens, or private URLs to this repository.
