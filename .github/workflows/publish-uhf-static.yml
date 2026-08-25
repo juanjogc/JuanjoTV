@@ -1,0 +1,69 @@
+name: Publish UHF static playlist
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-uhf-static.yml"
+      - "international-tv-hub/config/channels.json"
+      - "international-tv-hub/config/channels-static-expanded.json"
+      - "international-tv-hub/scripts/build_hub.py"
+      - "international-tv-hub/tests/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Run approval-lock tests
+        run: python3 -m unittest discover -s international-tv-hub/tests -v
+
+      - name: Build playlists
+        run: python3 international-tv-hub/scripts/build_hub.py
+
+      - name: Build approved expanded static playlist
+        run: >-
+          python3 international-tv-hub/scripts/build_hub.py
+          --config international-tv-hub/config/channels-static-expanded.json
+          --report international-tv-hub/reports/source-health-expanded.md
+
+      - name: Create publication directory
+        run: mkdir -p _site
+
+      - name: Stage the approved static 43
+        run: cp international-tv-hub/generated/uhf-static-43.m3u _site/uhf-static-43.m3u
+
+      - name: Stage the legacy static 28 rollback
+        run: cp international-tv-hub/generated/uhf-static-28.m3u _site/uhf-static-28.m3u
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy playlist
+        id: deployment
+        uses: actions/deploy-pages@v4
