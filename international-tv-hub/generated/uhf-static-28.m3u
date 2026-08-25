@@ -1,0 +1,57 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="BFMBusiness.fr" tvg-name="BFM Business" group-title="FR | French" uhf-country="FR" uhf-language="fra" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="BFM Business broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",BFM Business
+https://live-cdn-stream-euw1.bfmb.bct.nextradiotv.com/master.m3u8
+#EXTINF:-1 tvg-id="France24.fr" tvg-name="France 24 Français" group-title="FR | French" uhf-country="FR" uhf-language="fra" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="France Médias Monde broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",France 24 Français
+https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_2300.m3u8
+#EXTINF:-1 tvg-id="EuronewsFrench.fr" tvg-name="Euronews Français" group-title="FR | French" uhf-country="FR" uhf-language="fra" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="Euronews broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Euronews Français
+https://cdn-euronews.akamaized.net/live/eds/euronews-fr/25026/index.m3u8
+#EXTINF:-1 tvg-id="TV5MondeInfo.fr" tvg-name="TV5MONDE Info" group-title="FR | French" uhf-country="FR" uhf-language="fra" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="TV5MONDE broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",TV5MONDE Info
+https://ott.tv5monde.com/Content/HLS/Live/channel(info)/variant.m3u8
+#EXTINF:-1 tvg-id="arte.fr" tvg-name="ARTE Français" group-title="FR | French" uhf-country="FR" uhf-language="fra" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="ARTE public broadcaster simulcast CDN" uhf-vpn-required="true" uhf-vpn-route="FR" uhf-vpn-label="NordVPN France",ARTE Français
+https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
+#EXTINF:-1 tvg-id="BloombergTVEurope.uk" tvg-name="Bloomberg Television Europe" group-title="INTL | Global" uhf-country="GB" uhf-language="eng" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="Bloomberg publisher stream" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Bloomberg Television Europe
+https://www.bloomberg.com/media-manifest/streams/eu.m3u8
+#EXTINF:-1 tvg-id="BloombergTV.us" tvg-name="Bloomberg Television US" group-title="INTL | Global" uhf-country="US" uhf-language="eng" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="Bloomberg publisher stream" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Bloomberg Television US
+https://www.bloomberg.com/media-manifest/streams/us.m3u8
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" group-title="INTL | Global" uhf-country="GB" uhf-language="eng" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="BBC worldwide Akamai HLS feed" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",BBC News
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_hd_abr_v2.m3u8
+#EXTINF:-1 tvg-id="France24English.fr" tvg-name="France 24 English" group-title="INTL | Global" uhf-country="FR" uhf-language="eng" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="France Médias Monde broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",France 24 English
+https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_2300.m3u8
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews English" group-title="INTL | Global" uhf-country="FR" uhf-language="eng" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="Euronews broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Euronews English
+https://cdn-euronews.akamaized.net/live/eds/euronews-en/25002/index.m3u8
+#EXTINF:-1 tvg-id="DWEnglish.de" tvg-name="DW English" group-title="INTL | Global" uhf-country="DE" uhf-language="eng" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="DW public broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",DW English
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
+#EXTINF:-1 tvg-id="YahooFinance.us" tvg-name="Yahoo Finance" group-title="INTL | Global" uhf-country="US" uhf-language="eng" uhf-source="fast_distributor" uhf-source-label="FAST partner" uhf-distribution="Yahoo Finance FAST CloudFront feed; Amagi/Plex fallbacks" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Yahoo Finance
+https://d1ewctnvcwvvvu.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World-Japan" group-title="INTL | Global" uhf-country="JP" uhf-language="eng" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="NHK public broadcaster international stream" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",NHK World-Japan
+https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8
+#EXTINF:-1 tvg-id="CNA.sg" tvg-name="CNA" group-title="INTL | Global" uhf-country="SG" uhf-language="eng" uhf-source="broadcaster_cdn" uhf-source-label="Broadcaster CDN" uhf-distribution="CNA CloudFront broadcaster feed" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",CNA
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+#EXTINF:-1 tvg-id="SuspilneKyiv.ua" tvg-name="Suspilne Kyiv" group-title="CEE | Eastern Europe" uhf-country="UA" uhf-language="ukr" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="Suspilne public broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Suspilne Kyiv
+https://live-nstu.cdn-03.cosmonova.net.ua/mobile-app/main/nstu-kyiv/master.m3u8
+#EXTINF:-1 tvg-id="TVPWorld.pl" tvg-name="TVP World" group-title="CEE | Eastern Europe" uhf-country="PL" uhf-language="eng" uhf-source="third_party_mirror" uhf-source-label="Working mirror" uhf-distribution="lowa8026-cmyk GitHub mirror; Antik named-distributor fallback" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",TVP World
+https://lowa8026-cmyk.github.io/tvpvod/399731.m3u8
+#EXTINF:-1 tvg-id="CurrentTimeTV.cz" tvg-name="Current Time" group-title="CEE | Eastern Europe" uhf-country="CZ" uhf-language="rus" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="Radio Free Europe/Radio Liberty Akamai feed" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Current Time
+https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8
+#EXTINF:-1 tvg-id="TVRain.nl" tvg-name="TV Rain / Дождь" group-title="CEE | Eastern Europe" uhf-country="NL" uhf-language="rus" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="TV Rain broadcaster stream" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",TV Rain / Дождь
+https://wl.tvrain.tv/transcode/ngrp:ses_all/playlist.m3u8
+#EXTINF:-1 tvg-id="TVRInfo.ro" tvg-name="TVR Info" group-title="CEE | Eastern Europe" uhf-country="RO" uhf-language="ron" uhf-source="broadcaster_cdn" uhf-source-label="Broadcaster CDN" uhf-distribution="TVR Info broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",TVR Info
+https://tvr-info.lg.mncdn.com/tvrinfo/smil:tvrinfo.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ETVPlus.ee" tvg-name="ETV+" group-title="CEE | Eastern Europe" uhf-country="EE" uhf-language="rus" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="ERR Estonian public broadcaster HLS" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",ETV+
+https://sb.err.ee/live/etvpluss.m3u8
+#EXTINF:-1 tvg-id="TVPInfo.pl" tvg-name="TVP Info" group-title="CEE | Eastern Europe" uhf-country="PL" uhf-language="pol" uhf-source="third_party_mirror" uhf-source-label="Working mirror" uhf-distribution="lowa8026-cmyk GitHub mirror; Antik named-distributor fallback" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",TVP Info
+https://lowa8026-cmyk.github.io/tvpvod/399699.m3u8
+#EXTINF:-1 tvg-id="CT24.cz" tvg-name="ČT24" group-title="CEE | Eastern Europe" uhf-country="CZ" uhf-language="ces" uhf-source="named_distributor" uhf-source-label="Named distributor" uhf-distribution="Antik Telecom distribution of ČT24" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",ČT24
+https://dash2.antik.sk/live/ct24_avc_25p/playlist.m3u8
+#EXTINF:-1 tvg-id="BelsatTV.pl" tvg-name="Belsat / Vot Tak / Slawa" group-title="CEE | Eastern Europe" uhf-country="PL" uhf-language="bel,rus,ukr" uhf-source="working_distributor" uhf-source-label="Working distributor" uhf-distribution="Prosto TV distribution of the Belsat/Vot Tak/Slawa programming blocks" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Belsat / Vot Tak / Slawa
+https://iptv.prosto.tv/ch171/index.m3u8
+#EXTINF:-1 tvg-id="ORFIII.at" tvg-name="ORF III" group-title="EU | National" uhf-country="AT" uhf-language="deu" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="ORF/ORS broadcaster HLS" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",ORF III
+https://orf3.mdn.ors.at/orf/orf3/qxa/manifest.m3u8
+#EXTINF:-1 tvg-id="CanalZ.be" tvg-name="Canal Z" group-title="BENELUX | News" uhf-country="BE" uhf-language="fra" uhf-source="broadcaster_cdn" uhf-source-label="Broadcaster CDN" uhf-distribution="Roularta/Trends Z CloudFront live feed" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",Canal Z
+https://d1hz1p2gea2zy4.cloudfront.net/live/rmgtv/RMG-TRENDSZFR-LIVE/index.m3u8
+#EXTINF:-1 tvg-id="RTLTeleLetzebuerg.lu" tvg-name="RTL Télé Lëtzebuerg" group-title="BENELUX | News" uhf-country="LU" uhf-language="ltz" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="RTL Luxembourg broadcaster CDN" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",RTL Télé Lëtzebuerg
+https://stream.rtl.lu/data/live/tele/channel1/playlist.m3u8
+#EXTINF:-1 tvg-id="tagesschau24.de" tvg-name="tagesschau24" group-title="DE-CH | Public" uhf-country="DE" uhf-language="deu" uhf-source="official_cdn" uhf-source-label="Official HLS" uhf-distribution="ARD/tagesschau Akamai live stream" uhf-vpn-required="false" uhf-vpn-route="DIRECT" uhf-vpn-label="Direct",tagesschau24
+https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8
+#EXTINF:-1 tvg-id="phoenix.de" tvg-name="phoenix" group-title="DE-CH | Public" uhf-country="DE" uhf-language="deu" uhf-source="official_geo_hls" uhf-source-label="Nord Germany" uhf-distribution="ARD/ZDF phoenix official Akamai HLS" uhf-vpn-required="true" uhf-vpn-route="DE" uhf-vpn-label="NordVPN Germany",phoenix
+https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
