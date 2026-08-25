@@ -1,0 +1,198 @@
+{
+  "base_config": "channels.json",
+  "schema_version": 1,
+  "hub_name": "Juanjo International Television Hub — Static Expanded",
+  "approval_locked": true,
+  "approved_on": "2026-08-25",
+  "combined_file": "uhf-expanded-43.m3u",
+  "visible_vpn_flags": true,
+  "static_export_file": "uhf-static-43.m3u",
+  "approved_channel_ids": [
+    "bfm-business", "france24-fr", "euronews-fr", "tv5monde-info", "arte-fr",
+    "bloomberg-eu", "bloomberg-us", "bbc-news", "france24-en", "euronews-en",
+    "dw-en", "yahoo-finance", "nhk-world", "cna", "al-jazeera-en",
+    "cbs-news-24-7", "nbc-news-now", "abc-news-live",
+    "suspilne-kyiv", "tvp-world", "current-time", "tv-rain", "tvr-info", "etv-plus",
+    "tvp-info", "ct24", "belsat-vottak", "euronews-ru", "euronews-pl", "moldova-1",
+    "espreso-tv", "lrt-tv",
+    "orf-iii", "canal-z", "rai-news-24", "3cat-info", "tgcom24", "class-cnbc",
+    "rtl-letzebuerg", "tagesschau24", "phoenix", "rts-info", "zdfinfo"
+  ],
+  "approved_static_channel_ids": [
+    "bfm-business", "france24-fr", "euronews-fr", "tv5monde-info", "arte-fr",
+    "bloomberg-eu", "bloomberg-us", "bbc-news", "france24-en", "euronews-en",
+    "dw-en", "yahoo-finance", "nhk-world", "cna", "al-jazeera-en",
+    "cbs-news-24-7", "nbc-news-now", "abc-news-live",
+    "suspilne-kyiv", "tvp-world", "current-time", "tv-rain", "tvr-info", "etv-plus",
+    "tvp-info", "ct24", "belsat-vottak", "euronews-ru", "euronews-pl", "moldova-1",
+    "espreso-tv", "lrt-tv",
+    "orf-iii", "canal-z", "rai-news-24", "3cat-info", "tgcom24", "class-cnbc",
+    "rtl-letzebuerg", "tagesschau24", "phoenix", "rts-info", "zdfinfo"
+  ],
+  "excluded_channel_ids": ["rtve-24h", "ln24", "npo-politiek"],
+  "reindex_curated_rank": true,
+  "group_files": {
+    "FR | French": "expanded-fr-french.m3u",
+    "INTL | Global": "expanded-intl-global.m3u",
+    "CEE | Eastern Europe": "expanded-cee-eastern-europe.m3u",
+    "EU | National": "expanded-eu-national.m3u",
+    "BENELUX | News": "expanded-benelux-news.m3u",
+    "DE-CH | Public": "expanded-de-ch-public.m3u"
+  },
+  "route_names": {"LT": "NordVPN Lithuania"},
+  "route_country_codes": {"LT": "LT"},
+  "vpn_profiles": {
+    "direct_lithuania": {
+      "routes": ["DIRECT", "LT"],
+      "description": "Use the stable public LRT path directly; retry through NordVPN Lithuania if LRT changes regional policy."
+    }
+  },
+  "channel_overrides": {
+    "rai-news-24": {
+      "stream_url": "https://d3k8wzt41aflvx.cloudfront.net/RAINEWS24/Live.m3u8",
+      "alternate_stream_urls": [],
+      "source_label": "NordVPN Italy — static fallback",
+      "distribution": "Disclosed Rai broadcaster CloudFront fallback",
+      "resolver": null,
+      "notes": "Italian public rolling news; permanent HLS chain passed; visibly flagged for NordVPN Italy."
+    },
+    "rts-info": {
+      "source_label": "NordVPN Switzerland — static HLS",
+      "distribution": "RTS/SRG SSR public broadcaster Akamai HLS",
+      "resolver": null,
+      "notes": "French-language Swiss public news; permanent HLS chain passed; visibly flagged for NordVPN Switzerland."
+    }
+  },
+  "added_channels": [
+    {
+      "id": "3cat-info", "name": "3CatInfo", "tvg_id": "324.es",
+      "group": "EU | National", "country": "ES", "language": "cat",
+      "stream_url": "https://directes-tv-int.3catdirectes.cat/live-origin/canal324-hls/master.m3u8",
+      "official_page": "https://www.3cat.cat/3catinfo/",
+      "source_class": "official_cdn", "source_label": "Official HLS",
+      "distribution": "3Cat/CCMA public broadcaster CDN", "enabled": true,
+      "vpn_policy": "nord_spain", "required_route": null,
+      "notes": "Catalan public 24-hour news; full HLS chain passed from Peru."
+    },
+    {
+      "id": "al-jazeera-en", "name": "Al Jazeera English", "tvg_id": "AlJazeeraEnglish.qa",
+      "group": "INTL | Global", "country": "QA", "language": "eng",
+      "stream_url": "https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8",
+      "official_page": "https://www.aljazeera.com/live",
+      "source_class": "official_cdn", "source_label": "Official HLS",
+      "distribution": "Al Jazeera broadcaster CDN", "enabled": true,
+      "vpn_policy": "direct_global", "required_route": null,
+      "notes": "Global reporting with strong MENA and Global South coverage; full HLS chain passed from Peru."
+    },
+    {
+      "id": "moldova-1", "name": "Moldova 1", "tvg_id": "Moldova1.md",
+      "group": "CEE | Eastern Europe", "country": "MD", "language": "ron",
+      "stream_url": "https://v0.trm.md/static/streaming-playlists/hls/9b79338b-1870-4cd7-91d4-0f6ce5cac7ca/master.m3u8",
+      "official_page": "https://trm.md/en/despre-noi",
+      "source_class": "official_cdn", "source_label": "Official HLS",
+      "distribution": "Teleradio-Moldova public broadcaster CDN", "enabled": true,
+      "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Moldovan public-service news and analysis; full HLS chain passed from Peru."
+    },
+    {
+      "id": "cbs-news-24-7", "name": "CBS News 24/7", "tvg_id": "CBSNews.us",
+      "group": "INTL | Global", "country": "US", "language": "eng",
+      "stream_url": "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8",
+      "official_page": "https://www.cbsnews.com/live/",
+      "source_class": "official_cdn", "source_label": "Official HLS",
+      "distribution": "CBS News broadcaster CDN", "enabled": true,
+      "vpn_policy": "direct_global", "required_route": null,
+      "notes": "Free anchored US rolling news; full HLS chain passed from Peru."
+    },
+    {
+      "id": "espreso-tv", "name": "Espreso TV", "tvg_id": "EspresoTV.ua",
+      "group": "CEE | Eastern Europe", "country": "UA", "language": "ukr",
+      "stream_url": "https://api-tv.ipnet.ua/api/v1/manifest/2118742594.m3u8",
+      "official_page": "https://espreso.tv/stream",
+      "source_class": "named_distributor", "source_label": "Named CDN distributor",
+      "distribution": "Espreso broadcaster feed delivered by IPnet CDN", "enabled": true,
+      "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Ukrainian politics, war and investigations; full HLS chain passed from Peru."
+    },
+    {
+      "id": "tgcom24", "name": "TGCom24", "tvg_id": "TGCom24.it",
+      "group": "EU | National", "country": "IT", "language": "ita",
+      "stream_url": "https://d3k8wzt41aflvx.cloudfront.net/TGCOM24/Live.m3u8",
+      "official_page": "https://www.tgcom24.mediaset.it/diretta/",
+      "source_class": "broadcaster_cdn", "source_label": "Broadcaster CloudFront feed",
+      "distribution": "Mediaset broadcaster CloudFront delivery", "enabled": true,
+      "vpn_policy": "nord_italy", "required_route": null,
+      "notes": "Italian commercial rolling news; full HLS chain passed from Peru."
+    },
+    {
+      "id": "nbc-news-now", "name": "NBC News NOW", "tvg_id": "NBCNewsNow.us",
+      "group": "INTL | Global", "country": "US", "language": "eng",
+      "stream_url": "https://xumo-drct-nbcnn-ir8ze.fast.nbcuni.com/live/master.m3u8",
+      "official_page": "https://www.nbcnews.com/now",
+      "source_class": "fast_partner", "source_label": "NBCUniversal FAST feed",
+      "distribution": "NBCUniversal FAST/Xumo delivery", "enabled": true,
+      "vpn_policy": "direct_global", "required_route": null,
+      "notes": "US rolling news and live-event coverage; full HLS chain passed from Peru."
+    },
+    {
+      "id": "abc-news-live", "name": "ABC News Live", "tvg_id": "ABCNewsLive.us",
+      "group": "INTL | Global", "country": "US", "language": "eng",
+      "stream_url": "https://aegis-cloudfront-1.tubi.video/d6cbb0de-68e4-4f3b-82f9-bf5d526e0bde/index.m3u8",
+      "official_page": "https://app.abcnews.go.com/Live",
+      "source_class": "fast_partner", "source_label": "Tubi FAST distributor",
+      "distribution": "ABC News Live delivered by disclosed Tubi FAST CDN", "enabled": true,
+      "vpn_policy": "direct_global", "required_route": null,
+      "notes": "US rolling news; distributor is explicitly disclosed; full HLS chain passed from Peru."
+    },
+    {
+      "id": "lrt-tv", "name": "LRT TV", "tvg_id": "LRTTV.lt",
+      "group": "CEE | Eastern Europe", "country": "LT", "language": "lit",
+      "stream_url": "https://stream-secure.lrt.lt/lrt_hd/stream04/streamPlaylist.m3u8",
+      "official_page": "https://www.lrt.lt/mediateka/tiesiogiai/lrt-televizija",
+      "source_class": "official_cdn", "source_label": "Official stable HLS fallback",
+      "distribution": "LRT Lithuanian public broadcaster CDN", "enabled": true,
+      "vpn_policy": "direct_lithuania", "required_route": null,
+      "notes": "Official stable fallback returned by the LRT player; full HLS chain passed from Peru; NordVPN Lithuania is the retry route."
+    },
+    {
+      "id": "class-cnbc", "name": "Class CNBC", "tvg_id": "ClassCNBC.it",
+      "group": "EU | National", "country": "IT", "language": "ita",
+      "stream_url": "https://amg14891-amg14891c5-amgplt0020.playout.now3.amagi.tv/playlist.m3u8",
+      "official_page": "https://video.milanofinanza.it/",
+      "source_class": "named_distributor", "source_label": "NordVPN Italy — Amagi distributor",
+      "distribution": "Class CNBC FAST feed delivered by Amagi", "enabled": true,
+      "vpn_policy": "nord_italy", "required_route": "IT",
+      "notes": "Italian business and markets channel; Peru returned 403; configure NordVPN Italy in UHF before playback."
+    },
+    {
+      "id": "euronews-ru", "name": "Euronews Русский", "tvg_id": "EuronewsRussian.fr",
+      "group": "CEE | Eastern Europe", "country": "FR", "language": "rus",
+      "stream_url": "https://cdn-euronews.akamaized.net/live/eds/euronews-ru/25071/index.m3u8",
+      "official_page": "https://ru.euronews.com/live",
+      "source_class": "official_cdn", "source_label": "Official HLS",
+      "distribution": "Euronews broadcaster Akamai CDN", "enabled": true,
+      "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Russian-language European perspective; full HLS chain passed from Peru."
+    },
+    {
+      "id": "euronews-pl", "name": "Euronews Polski", "tvg_id": "EuronewsPolish.fr",
+      "group": "CEE | Eastern Europe", "country": "PL", "language": "pol",
+      "stream_url": "https://cdn-euronews.akamaized.net/live/eds/euronews-pl/26382/index.m3u8",
+      "official_page": "https://pl.euronews.com/live",
+      "source_class": "official_cdn", "source_label": "Official HLS",
+      "distribution": "Euronews broadcaster Akamai CDN", "enabled": true,
+      "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Polish-language European news; full HLS chain passed from Peru."
+    },
+    {
+      "id": "zdfinfo", "name": "ZDFinfo", "tvg_id": "ZDFinfo.de",
+      "group": "DE-CH | Public", "country": "DE", "language": "deu",
+      "stream_url": "https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8",
+      "official_page": "https://www.zdf.de/zdfinfo",
+      "source_class": "official_geo_hls", "source_label": "NordVPN Germany — official HLS",
+      "distribution": "ZDF public broadcaster Akamai HLS", "enabled": true,
+      "vpn_policy": "nord_germany", "required_route": "DE",
+      "notes": "German documentaries, investigations and current affairs; ZDF marks the player DE-only; configure NordVPN Germany in UHF."
+    }
+  ]
+}

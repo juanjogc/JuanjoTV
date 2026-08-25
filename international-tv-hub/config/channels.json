@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "hub_name": "Juanjo International Television Hub",
+  "approval_locked": true,
+  "approved_on": "2026-08-24",
+  "approved_channel_ids": [
+    "bfm-business", "france24-fr", "euronews-fr", "tv5monde-info", "arte-fr",
+    "bloomberg-eu", "bloomberg-us", "bbc-news", "france24-en", "euronews-en",
+    "dw-en", "yahoo-finance", "nhk-world", "cna", "suspilne-kyiv", "tvp-world",
+    "current-time", "tv-rain", "tvr-info", "etv-plus", "tvp-info", "ct24",
+    "belsat-vottak", "rtve-24h", "orf-iii", "rai-news-24", "canal-z", "ln24",
+    "npo-politiek", "rtl-letzebuerg", "tagesschau24", "phoenix", "rts-info"
+  ],
+  "static_export_file": "uhf-static-28.m3u",
+  "approved_static_channel_ids": [
+    "bfm-business", "france24-fr", "euronews-fr", "tv5monde-info", "arte-fr",
+    "bloomberg-eu", "bloomberg-us", "bbc-news", "france24-en", "euronews-en",
+    "dw-en", "yahoo-finance", "nhk-world", "cna", "suspilne-kyiv", "tvp-world",
+    "current-time", "tv-rain", "tvr-info", "etv-plus", "tvp-info", "ct24",
+    "belsat-vottak", "orf-iii", "canal-z", "rtl-letzebuerg", "tagesschau24",
+    "phoenix"
+  ],
+  "default_timeout_seconds": 12,
+  "group_order": [
+    "FR | French", "INTL | Global", "CEE | Eastern Europe",
+    "EU | National", "BENELUX | News", "DE-CH | Public"
+  ],
+  "group_files": {
+    "FR | French": "fr-french.m3u",
+    "INTL | Global": "intl-global.m3u",
+    "CEE | Eastern Europe": "cee-eastern-europe.m3u",
+    "EU | National": "eu-national.m3u",
+    "BENELUX | News": "benelux-news.m3u",
+    "DE-CH | Public": "de-ch-public.m3u"
+  },
+  "route_names": {
+    "DIRECT": "Peru direct", "FR": "NordVPN France", "BE": "NordVPN Belgium",
+    "CH": "NordVPN Switzerland", "GB": "NordVPN United Kingdom",
+    "US": "NordVPN United States", "NL": "NordVPN Netherlands",
+    "DE": "NordVPN Germany", "PL": "NordVPN Poland", "ES": "NordVPN Spain",
+    "IT": "NordVPN Italy", "JP": "NordVPN Japan", "SG": "NordVPN Singapore"
+  },
+  "route_country_codes": {
+    "DIRECT": "PE", "FR": "FR", "BE": "BE", "CH": "CH", "GB": "GB",
+    "US": "US", "NL": "NL", "DE": "DE", "PL": "PL", "ES": "ES",
+    "IT": "IT", "JP": "JP", "SG": "SG"
+  },
+  "vpn_profiles": {
+    "direct_francophone": {
+      "routes": ["DIRECT", "FR", "BE", "CH"],
+      "description": "Try Peru directly, then France and nearby Francophone exits."
+    },
+    "direct_global": {
+      "routes": ["DIRECT", "GB", "US", "NL", "DE"],
+      "description": "Open international feeds, with broad US and European fallback exits."
+    },
+    "direct_asia": {
+      "routes": ["DIRECT", "JP", "SG", "GB", "US"],
+      "description": "Open Asia-Pacific feeds, then broadcaster-region and international exits."
+    },
+    "direct_cee": {
+      "routes": ["DIRECT", "PL", "DE", "NL"],
+      "description": "Open CEE feeds, then Poland, Germany, and Netherlands."
+    },
+    "nord_spain": {"routes": ["ES", "DIRECT"], "description": "Use NordVPN Spain for RTVE playback."},
+    "nord_italy": {"routes": ["IT", "DIRECT"], "description": "Use NordVPN Italy for Rai playback."},
+    "nord_belgium": {"routes": ["BE", "DIRECT"], "description": "Use NordVPN Belgium to resolve and play LN24."},
+    "nord_netherlands": {"routes": ["NL", "DIRECT"], "description": "Use NordVPN Netherlands to resolve and play NPO Politiek en Nieuws."},
+    "nord_germany": {"routes": ["DE", "DIRECT"], "description": "Use NordVPN Germany for phoenix playback."},
+    "nord_switzerland": {"routes": ["CH", "DIRECT"], "description": "Use NordVPN Switzerland for RTS Info playback."}
+  },
+  "vpn_country_routes": {},
+  "channels": [
+    {
+      "id": "bfm-business", "name": "BFM Business", "tvg_id": "BFMBusiness.fr",
+      "group": "FR | French", "country": "FR", "language": "fra",
+      "stream_url": "https://live-cdn-stream-euw1.bfmb.bct.nextradiotv.com/master.m3u8",
+      "official_page": "https://www.bfmtv.com/economie/replay-emissions/bfm-business-direct/",
+      "source_class": "official_cdn", "source_label": "Official HLS",
+      "distribution": "BFM Business broadcaster CDN", "enabled": true, "curated_rank": 1,
+      "vpn_policy": "direct_francophone", "required_route": null,
+      "notes": "French markets and economics."
+    },
+    {
+      "id": "france24-fr", "name": "France 24 Français", "tvg_id": "France24.fr",
+      "group": "FR | French", "country": "FR", "language": "fra",
+      "stream_url": "https://live.france24.com/hls/live/2037179/F24_FR_HI_HLS/master_2300.m3u8",
+      "official_page": "https://www.france24.com/fr/direct", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "France Médias Monde broadcaster CDN",
+      "enabled": true, "curated_rank": 2, "vpn_policy": "direct_francophone", "required_route": null,
+      "notes": "French international news."
+    },
+    {
+      "id": "euronews-fr", "name": "Euronews Français", "tvg_id": "EuronewsFrench.fr",
+      "group": "FR | French", "country": "FR", "language": "fra",
+      "stream_url": "https://cdn-euronews.akamaized.net/live/eds/euronews-fr/25026/index.m3u8",
+      "official_page": "https://fr.euronews.com/live", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "Euronews broadcaster CDN",
+      "enabled": true, "curated_rank": 3, "vpn_policy": "direct_francophone", "required_route": null,
+      "notes": "European rolling news in French."
+    },
+    {
+      "id": "tv5monde-info", "name": "TV5MONDE Info", "tvg_id": "TV5MondeInfo.fr",
+      "group": "FR | French", "country": "FR", "language": "fra",
+      "stream_url": "https://ott.tv5monde.com/Content/HLS/Live/channel(info)/variant.m3u8",
+      "official_page": "https://information.tv5monde.com/en-direct", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "TV5MONDE broadcaster CDN",
+      "enabled": true, "curated_rank": 4, "vpn_policy": "direct_francophone", "required_route": null,
+      "notes": "Francophone public-interest news."
+    },
+    {
+      "id": "arte-fr", "name": "ARTE Français", "tvg_id": "arte.fr",
+      "group": "FR | French", "country": "FR", "language": "fra",
+      "stream_url": "https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8",
+      "official_page": "https://www.arte.tv/fr/direct/", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "ARTE public broadcaster simulcast CDN",
+      "enabled": true, "curated_rank": 5, "vpn_policy": "direct_francophone", "required_route": "FR",
+      "notes": "Documentaries, science, history and culture; current Peru route is blocked, so use NordVPN France."
+    },
+    {
+      "id": "bloomberg-eu", "name": "Bloomberg Television Europe", "tvg_id": "BloombergTVEurope.uk",
+      "group": "INTL | Global", "country": "GB", "language": "eng",
+      "stream_url": "https://www.bloomberg.com/media-manifest/streams/eu.m3u8",
+      "official_page": "https://www.bloomberg.com/live/europe", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "Bloomberg publisher stream",
+      "enabled": true, "curated_rank": 6, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "Markets, macroeconomics and European business."
+    },
+    {
+      "id": "bloomberg-us", "name": "Bloomberg Television US", "tvg_id": "BloombergTV.us",
+      "group": "INTL | Global", "country": "US", "language": "eng",
+      "stream_url": "https://www.bloomberg.com/media-manifest/streams/us.m3u8",
+      "official_page": "https://www.bloomberg.com/live/us", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "Bloomberg publisher stream",
+      "enabled": true, "curated_rank": 7, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "US markets and corporate news."
+    },
+    {
+      "id": "bbc-news", "name": "BBC News", "tvg_id": "BBCNews.uk",
+      "group": "INTL | Global", "country": "GB", "language": "eng",
+      "stream_url": "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_hd_abr_v2.m3u8",
+      "official_page": "https://www.bbc.com/news/av/10462520", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "BBC worldwide Akamai HLS feed",
+      "enabled": true, "curated_rank": 8, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "Global and British public-service news."
+    },
+    {
+      "id": "france24-en", "name": "France 24 English", "tvg_id": "France24English.fr",
+      "group": "INTL | Global", "country": "FR", "language": "eng",
+      "stream_url": "https://live.france24.com/hls/live/2037218/F24_EN_HI_HLS/master_2300.m3u8",
+      "official_page": "https://www.france24.com/en/live", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "France Médias Monde broadcaster CDN",
+      "enabled": true, "curated_rank": 9, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "International affairs comparison feed."
+    },
+    {
+      "id": "euronews-en", "name": "Euronews English", "tvg_id": "EuronewsEnglish.fr",
+      "group": "INTL | Global", "country": "FR", "language": "eng",
+      "stream_url": "https://cdn-euronews.akamaized.net/live/eds/euronews-en/25002/index.m3u8",
+      "official_page": "https://www.euronews.com/live", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "Euronews broadcaster CDN",
+      "enabled": true, "curated_rank": 10, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "Fast Europe-wide news scan."
+    },
+    {
+      "id": "dw-en", "name": "DW English", "tvg_id": "DWEnglish.de",
+      "group": "INTL | Global", "country": "DE", "language": "eng",
+      "stream_url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8",
+      "official_page": "https://www.dw.com/en/live-tv/channel-english", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "DW public broadcaster CDN",
+      "enabled": true, "curated_rank": 11, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "German and European international perspective."
+    },
+    {
+      "id": "yahoo-finance", "name": "Yahoo Finance", "tvg_id": "YahooFinance.us",
+      "group": "INTL | Global", "country": "US", "language": "eng",
+      "stream_url": "https://d1ewctnvcwvvvu.cloudfront.net/playlist.m3u8",
+      "alternate_stream_urls": [
+        "https://yahoo-plex.amagi.tv/playlist.m3u8",
+        "https://yahoo-roku-us.amagi.tv/playlist.m3u8"
+      ],
+      "official_page": "https://finance.yahoo.com/videos/", "source_class": "fast_distributor",
+      "source_label": "FAST partner", "distribution": "Yahoo Finance FAST CloudFront feed; Amagi/Plex fallbacks",
+      "enabled": true, "curated_rank": 12, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "Open US markets cross-check."
+    },
+    {
+      "id": "nhk-world", "name": "NHK World-Japan", "tvg_id": "NHKWorldJapan.jp",
+      "group": "INTL | Global", "country": "JP", "language": "eng",
+      "stream_url": "https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8",
+      "official_page": "https://www3.nhk.or.jp/nhkworld/en/live/", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "NHK public broadcaster international stream",
+      "enabled": true, "curated_rank": 13, "vpn_policy": "direct_asia", "required_route": null,
+      "notes": "Japanese public-service international perspective."
+    },
+    {
+      "id": "cna", "name": "CNA", "tvg_id": "CNA.sg",
+      "group": "INTL | Global", "country": "SG", "language": "eng",
+      "stream_url": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8",
+      "official_page": "https://www.channelnewsasia.com/watch", "source_class": "broadcaster_cdn",
+      "source_label": "Broadcaster CDN", "distribution": "CNA CloudFront broadcaster feed",
+      "enabled": true, "curated_rank": 14, "vpn_policy": "direct_asia", "required_route": null,
+      "notes": "Asia-Pacific geopolitics and business."
+    },
+    {
+      "id": "suspilne-kyiv", "name": "Suspilne Kyiv", "tvg_id": "SuspilneKyiv.ua",
+      "group": "CEE | Eastern Europe", "country": "UA", "language": "ukr",
+      "stream_url": "https://live-nstu.cdn-03.cosmonova.net.ua/mobile-app/main/nstu-kyiv/master.m3u8",
+      "official_page": "https://suspilne.media/kyiv/", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "Suspilne public broadcaster CDN",
+      "enabled": true, "curated_rank": 15, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Ukrainian public-service perspective."
+    },
+    {
+      "id": "tvp-world", "name": "TVP World", "tvg_id": "TVPWorld.pl",
+      "group": "CEE | Eastern Europe", "country": "PL", "language": "eng",
+      "stream_url": "https://lowa8026-cmyk.github.io/tvpvod/399731.m3u8",
+      "alternate_stream_urls": ["https://dash2.antik.sk/live/test_tvp_world/playlist.m3u8"],
+      "official_page": "https://tvpworld.com/", "source_class": "third_party_mirror",
+      "source_label": "Working mirror",
+      "distribution": "lowa8026-cmyk GitHub mirror; Antik named-distributor fallback",
+      "enabled": true, "curated_rank": 16, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Approved with the mirror disclosure preserved; English-language CEE perspective."
+    },
+    {
+      "id": "current-time", "name": "Current Time", "tvg_id": "CurrentTimeTV.cz",
+      "group": "CEE | Eastern Europe", "country": "CZ", "language": "rus",
+      "stream_url": "https://rfe-ingest.akamaized.net/hls/live/2033043/tvmc05/master.m3u8",
+      "official_page": "https://www.currenttime.tv/live/video/92", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "Radio Free Europe/Radio Liberty Akamai feed",
+      "enabled": true, "curated_rank": 17, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Independent Russian-language 24/7 news."
+    },
+    {
+      "id": "tv-rain", "name": "TV Rain / Дождь", "tvg_id": "TVRain.nl",
+      "group": "CEE | Eastern Europe", "country": "NL", "language": "rus",
+      "stream_url": "https://wl.tvrain.tv/transcode/ngrp:ses_all/playlist.m3u8",
+      "official_page": "https://tvrain.tv/live/", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "TV Rain broadcaster stream",
+      "enabled": true, "curated_rank": 18, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Independent Russian opposition television."
+    },
+    {
+      "id": "tvr-info", "name": "TVR Info", "tvg_id": "TVRInfo.ro",
+      "group": "CEE | Eastern Europe", "country": "RO", "language": "ron",
+      "stream_url": "https://tvr-info.lg.mncdn.com/tvrinfo/smil:tvrinfo.smil/playlist.m3u8",
+      "official_page": "https://tvrinfo.ro/", "source_class": "broadcaster_cdn",
+      "source_label": "Broadcaster CDN", "distribution": "TVR Info broadcaster CDN",
+      "enabled": true, "curated_rank": 19, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Romanian public rolling news."
+    },
+    {
+      "id": "etv-plus", "name": "ETV+", "tvg_id": "ETVPlus.ee",
+      "group": "CEE | Eastern Europe", "country": "EE", "language": "rus",
+      "stream_url": "https://sb.err.ee/live/etvpluss.m3u8",
+      "official_page": "https://jupiter.err.ee/otse/etvpluss", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "ERR Estonian public broadcaster HLS",
+      "enabled": true, "curated_rank": 20, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Russian-language Baltic public service."
+    },
+    {
+      "id": "tvp-info", "name": "TVP Info", "tvg_id": "TVPInfo.pl",
+      "group": "CEE | Eastern Europe", "country": "PL", "language": "pol",
+      "stream_url": "https://lowa8026-cmyk.github.io/tvpvod/399699.m3u8",
+      "alternate_stream_urls": ["https://dash4.antik.sk/live/test_tvp_info/playlist.m3u8"],
+      "official_page": "https://www.tvp.info/", "source_class": "third_party_mirror",
+      "source_label": "Working mirror",
+      "distribution": "lowa8026-cmyk GitHub mirror; Antik named-distributor fallback",
+      "enabled": true, "curated_rank": 21, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Approved with the mirror disclosure preserved; Polish domestic rolling news."
+    },
+    {
+      "id": "ct24", "name": "ČT24", "tvg_id": "CT24.cz",
+      "group": "CEE | Eastern Europe", "country": "CZ", "language": "ces",
+      "stream_url": "https://dash2.antik.sk/live/ct24_avc_25p/playlist.m3u8",
+      "official_page": "https://ct24.ceskatelevize.cz/zive-vysilani", "source_class": "named_distributor",
+      "source_label": "Named distributor", "distribution": "Antik Telecom distribution of ČT24",
+      "enabled": true, "curated_rank": 22, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Czech public rolling news; distributor disclosure preserved."
+    },
+    {
+      "id": "belsat-vottak", "name": "Belsat / Vot Tak / Slawa", "tvg_id": "BelsatTV.pl",
+      "group": "CEE | Eastern Europe", "country": "PL", "language": "bel,rus,ukr",
+      "stream_url": "https://iptv.prosto.tv/ch171/index.m3u8",
+      "official_page": "https://belsat.eu/en/live/", "source_class": "working_distributor",
+      "source_label": "Working distributor",
+      "distribution": "Prosto TV distribution of the Belsat/Vot Tak/Slawa programming blocks",
+      "request_headers": {"User-Agent": "Mozilla/5.0 (AppleTV; CPU OS 17_0 like Mac OS X) AppleWebKit/605.1.15"},
+      "enabled": true, "curated_rank": 23, "vpn_policy": "direct_cee", "required_route": null,
+      "notes": "Belarusian, Russian and Ukrainian independent blocks; distributor disclosure preserved."
+    },
+    {
+      "id": "rtve-24h", "name": "RTVE Canal 24 Horas", "tvg_id": "24Horas.es",
+      "group": "EU | National", "country": "ES", "language": "spa",
+      "stream_url": "https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8?idasset=1694255",
+      "official_page": "https://www.rtve.es/play/videos/directo/24h/", "source_class": "official_geo_hls",
+      "source_label": "Nord Spain proxy", "distribution": "RTVE official player resolving to Golumi live CDN through a restricted local HLS proxy",
+      "enabled": true, "curated_rank": 24, "vpn_policy": "nord_spain", "required_route": "ES",
+      "request_headers": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+        "Referer": "https://www.rtve.es/play/videos/directo/24h/",
+        "Origin": "https://www.rtve.es"
+      },
+      "resolver": {
+        "type": "rtve_live_player",
+        "endpoint": "https://ztnr.rtve.es/ztnr/1694255.m3u8",
+        "proxy_hls": true,
+        "allowed_hosts": ["ztnr.rtve.es", "rtvelivestream.rtve.es"]
+      },
+      "notes": "Spanish public rolling news; RTVE requires its official browser headers, preserved by the local proxy; play through NordVPN Spain."
+    },
+    {
+      "id": "orf-iii", "name": "ORF III", "tvg_id": "ORFIII.at",
+      "group": "EU | National", "country": "AT", "language": "deu",
+      "stream_url": "https://orf3.mdn.ors.at/orf/orf3/qxa/manifest.m3u8",
+      "official_page": "https://tv.orf.at/orf3/", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "ORF/ORS broadcaster HLS",
+      "enabled": true, "curated_rank": 25, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "News analysis, parliament and culture."
+    },
+    {
+      "id": "rai-news-24", "name": "Rai News 24", "tvg_id": "RaiNews24.it",
+      "group": "EU | National", "country": "IT", "language": "ita",
+      "stream_url": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=62",
+      "alternate_stream_urls": ["https://d3k8wzt41aflvx.cloudfront.net/RAINEWS24/Live.m3u8"],
+      "official_page": "https://www.rainews.it/notiziari/rainews24", "source_class": "official_geo_hls",
+      "source_label": "Nord Italy resolver", "distribution": "Rai News official player via Mediapolis and Rai CDN; disclosed broadcaster CloudFront fallback",
+      "enabled": true, "curated_rank": 26, "vpn_policy": "nord_italy", "required_route": "IT",
+      "request_headers": {
+        "Origin": "https://www.rainews.it",
+        "Referer": "https://www.rainews.it/notiziari/rainews24"
+      },
+      "resolver": {
+        "type": "rai_mediapolis",
+        "endpoint": "https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1",
+        "output": "62",
+        "ua_token": "null"
+      },
+      "notes": "Italian public rolling news; play through NordVPN Italy."
+    },
+    {
+      "id": "canal-z", "name": "Canal Z", "tvg_id": "CanalZ.be",
+      "group": "BENELUX | News", "country": "BE", "language": "fra",
+      "stream_url": "https://d1hz1p2gea2zy4.cloudfront.net/live/rmgtv/RMG-TRENDSZFR-LIVE/index.m3u8",
+      "official_page": "https://canalz.levif.be/", "source_class": "broadcaster_cdn",
+      "source_label": "Broadcaster CDN", "distribution": "Roularta/Trends Z CloudFront live feed",
+      "enabled": true, "curated_rank": 27, "vpn_policy": "direct_francophone", "required_route": null,
+      "notes": "French-language Benelux business news."
+    },
+    {
+      "id": "ln24", "name": "LN24", "tvg_id": "LN24.be",
+      "group": "BENELUX | News", "country": "BE", "language": "fra",
+      "stream_url": "https://funradiovisionlow.vedge.infomaniak.com/livecast/ik:funradiovisionlow/manifest.m3u8",
+      "official_page": "https://www.ln24.be/en-direct/", "source_class": "official_dynamic_geo",
+      "source_label": "Nord Belgium resolver", "distribution": "LN24 official Rise player resolving to Infomaniak CDN",
+      "request_headers": {"Referer": "https://www.ln24.be/en-direct/"},
+      "resolver": {"type": "ln24_player", "endpoint": "https://www.ln24.be/rise-api/videoplayers/live.php?autoplay=on"},
+      "enabled": true, "curated_rank": 28, "vpn_policy": "nord_belgium", "required_route": "BE",
+      "notes": "Belgian talk, domestic news and current affairs; resolve and play through NordVPN Belgium."
+    },
+    {
+      "id": "npo-politiek", "name": "NPO Politiek en Nieuws", "tvg_id": "NPOPolitiekEnNieuws.nl",
+      "group": "BENELUX | News", "country": "NL", "language": "nld",
+      "stream_url": "https://npo.nl/start/live/npo-politiek-en-nieuws",
+      "official_page": "https://npo.nl/start/live/npo-politiek-en-nieuws", "source_class": "official_dynamic_geo",
+      "source_label": "Nord Netherlands resolver",
+      "distribution": "NPO Start anonymous token and official NPO Player stream-link resolver",
+      "request_headers": {"Origin": "https://npo.nl", "Referer": "https://npo.nl/start/live/npo-politiek-en-nieuws"},
+      "resolver": {
+        "type": "npo_player", "endpoint": "https://npo.nl/start/api/domain/player-token",
+        "stream_link_endpoint": "https://prod.npoplayer.nl/stream-link",
+        "product_id": "LI_NEDERLAND1_221675",
+        "referrer_url": "https://npo.nl/start/live/npo-politiek-en-nieuws"
+      },
+      "enabled": true, "curated_rank": 29, "vpn_policy": "nord_netherlands", "required_route": "NL",
+      "notes": "Dutch politics, debates and press conferences; resolve and play through NordVPN Netherlands."
+    },
+    {
+      "id": "rtl-letzebuerg", "name": "RTL Télé Lëtzebuerg", "tvg_id": "RTLTeleLetzebuerg.lu",
+      "group": "BENELUX | News", "country": "LU", "language": "ltz",
+      "stream_url": "https://stream.rtl.lu/data/live/tele/channel1/playlist.m3u8",
+      "official_page": "https://www.rtl.lu/tele", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "RTL Luxembourg broadcaster CDN",
+      "enabled": true, "curated_rank": 30, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "Luxembourgish national news and public-interest programming."
+    },
+    {
+      "id": "tagesschau24", "name": "tagesschau24", "tvg_id": "tagesschau24.de",
+      "group": "DE-CH | Public", "country": "DE", "language": "deu",
+      "stream_url": "https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8",
+      "official_page": "https://www.tagesschau.de/multimedia/livestreams/", "source_class": "official_cdn",
+      "source_label": "Official HLS", "distribution": "ARD/tagesschau Akamai live stream",
+      "enabled": true, "curated_rank": 31, "vpn_policy": "direct_global", "required_route": null,
+      "notes": "ARD public rolling news."
+    },
+    {
+      "id": "phoenix", "name": "phoenix", "tvg_id": "phoenix.de",
+      "group": "DE-CH | Public", "country": "DE", "language": "deu",
+      "stream_url": "https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8",
+      "official_page": "https://www.phoenix.de/livestream.html", "source_class": "official_geo_hls",
+      "source_label": "Nord Germany", "distribution": "ARD/ZDF phoenix official Akamai HLS",
+      "enabled": true, "curated_rank": 32, "vpn_policy": "nord_germany", "required_route": "DE",
+      "notes": "Politics, parliament and live events; play through NordVPN Germany."
+    },
+    {
+      "id": "rts-info", "name": "RTS Info", "tvg_id": "RTSInfo.ch",
+      "group": "DE-CH | Public", "country": "CH", "language": "fra",
+      "stream_url": "https://rtsinfo-d.akamaized.net/out/v1/lsvs/rts-info/cmaf/hls-master.m3u8?dw=7201",
+      "official_page": "https://www.rts.ch/play/tv/live/", "source_class": "official_geo_hls",
+      "source_label": "Nord Switzerland", "distribution": "RTS public broadcaster Akamai HLS",
+      "enabled": true, "curated_rank": 33, "vpn_policy": "nord_switzerland", "required_route": "CH",
+      "resolver": {
+        "type": "srgssr_media_composition",
+        "endpoint": "https://il.srgssr.ch/integrationlayer/2.0/mediaComposition/byUrn/urn:rts:video:1967124.json"
+      },
+      "notes": "French-language Swiss public 24/7 news loop; official SRG SSR media-composition resolver; play through NordVPN Switzerland."
+    }
+  ]
+}
